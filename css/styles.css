@@ -25,6 +25,7 @@
     --portfolio-card-hover-shadow:rgba(0, 0, 0, 0.25);
     --portfoio-btn-shadow:rgba(0, 0, 0, 0.25);
     --hero-background-shadow:rgba(0, 0, 0, 0.25);
+    --hero-background-color:#C4C4C4;
 }
 h1,
 h2,
@@ -135,6 +136,7 @@ body {
     letter-spacing: 0.02em;
     color:var(--secondary-text-dark-color);
 }
+
 .header-email{
 
     font-weight: 500;
@@ -142,6 +144,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--secondary-text-dark-color);
 }
+
 .header-email:hover,
 .header-email:focus,
 .header-phone-number:hover,    
@@ -151,9 +154,9 @@ color:var(--accent-color)
 /*=======/header======*/
 
 .hero{
+    background-color:var(--hero-background-color) ;
     background-image:linear-gradient(var(--hero-line-gradient),var(--hero-line-gradient)), 
     url(../images/hero/img.jpg) ;
-    background-repeat: no-repeat;
     background-size: cover;
     padding-top: 200px ;
     padding-bottom: 200px;
@@ -269,8 +272,12 @@ color:var(--accent-color)
     }
 
 .team-img{
-    margin-bottom: 30px
+    
 
+}
+.team-card-down{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .team-subtitle{
     margin-bottom: 10px;
@@ -284,7 +291,7 @@ color:var(--accent-color)
     line-height: 1.19;
     text-align: center;
     color: var(--secondary-text-dark-color);
-    margin-bottom: 30px;
+  
  }
     
     /*===/team===*/
@@ -379,7 +386,11 @@ height: 0;}
 .portfolio-project-box{
     max-width: 370px;
     flex-basis: calc((100%-30)/3) ;}
-.box-hover:hover{ box-shadow: 0 4px 4px  var(--portfolio-card-hover-shadow);}
+
+.box-link:hover,
+.box-link:focus
+{ display: block;
+    box-shadow: 0 4px 4px 0 var(--portfolio-card-hover-shadow);}
 .portfolio-card-down{
     border-left:solid 1px var(--portfolio-box-border-color) ;
     border-right:solid 1px var(--portfolio-box-border-color) ;
@@ -392,6 +403,7 @@ height: 0;}
 
  }
 .portfolio-subtitle{
+    color: var(--primary-text-dark-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -402,6 +414,7 @@ height: 0;}
     
     }
 .portfolio-text{
+    color: var(--secondary-text-dark-color);
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-dark-color);
