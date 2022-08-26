@@ -370,6 +370,31 @@ color:var(--accent-color);
  }
     
     /*===/team===*/
+.client{}
+.client-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.client-list{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+  
+}
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: solid 1px #000;
+}
+
+/* ==========/client=========== */
+
+
 .footer{
     background-color: var(--secondary-background-color);
     padding: 60px 0;
