@@ -27,6 +27,9 @@
     --hero-background-shadow:rgba(0, 0, 0, 0.25);
     --hero-background-color:#C4C4C4;
     --header-icon-color:#757575;
+    --svg-background-color:#F5F4FA;
+    --team-social-color:#AFB1B8;
+    --team-social-color-hover-focus:#FFFFFF;
 }
 h1,
 h2,
@@ -221,6 +224,7 @@ color:var(--accent-color);
 }
 /*====/hero====*/
 .desc{
+    padding-top:86px;
 
 }
 .desc-title-hidden{
@@ -234,17 +238,26 @@ color:var(--accent-color);
     column-gap: 30px ;
     display: flex;
    flex-wrap: wrap;
-
-   justify-content: center;
     }
-    .icon-antenna{
+    .desc-icon{
         width: 70px;
         height: 70px;
-    
+        
     }
+    .svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        background-color: var(--svg-background-color);}
     .desc-list-item{
         max-width: 270px;
         flex-basis: calc((100%-30px) / 4);
+        
+    }
+    .desc-card-down{
+        padding-top: 30px;
     }
 .desc-subtitle{
     margin-bottom: 10px;
@@ -289,6 +302,39 @@ color:var(--accent-color);
     column-gap: 30px;
 
 }
+.team-social-list{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+  
+
+
+}
+.social-link-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    background-color: #fff;
+    
+}
+.social-link-team:hover,
+.social-link-team:focus{ 
+    background-color: var(--accent-color);
+}
+.social-link-team:hover .social-icon,
+.social-link-team:focus .social-icon{
+    fill: var(--team-social-color-hover-focus );
+
+}
+.social-icon{
+    width: 20px;
+    height:20px ;
+    fill: var(--team-social-color);
+
+}
     .team-one-persone{
         box-shadow: 0 4px 4px 0 var(--team-box-shadow);
         border-bottom-left-radius: 4px ;
@@ -297,6 +343,7 @@ color:var(--accent-color);
         max-width: 270px;
         flex-basis: calc((100%-30)/4);
     }
+  
 
 .team-img{
     
@@ -318,6 +365,7 @@ color:var(--accent-color);
     line-height: 1.19;
     text-align: center;
     color: var(--secondary-text-dark-color);
+    margin-bottom: 16px;
   
  }
     
