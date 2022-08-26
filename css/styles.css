@@ -30,6 +30,8 @@
     --svg-background-color:#F5F4FA;
     --team-social-color:#AFB1B8;
     --team-social-color-hover-focus:#FFFFFF;
+    --client-logo-color:#AFB1B8;
+    --client-logo-border-color:#AFB1B8;
 }
 h1,
 h2,
@@ -376,20 +378,35 @@ color:var(--accent-color);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom:50px ;
 }
 .client-list{
     display: flex;
     justify-content: center;
     column-gap: 30px;
-  
 }
+.icon-logo{
+    width:106px ;
+    height:60px ;
+    fill: var(--client-logo-color);
+}
+
 .client-link{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
     height: 92px;
-    border: solid 1px #000;
+    border: solid 1px var(--client-logo-border-color);
+    border-radius: 4px;
+}
+.client-link:hover,
+.client-link:focus{
+    border: solid 1px var(--accent-color);
+}
+.client-link:hover .icon-logo,
+.client-link:focus .icon-logo{
+    fill: var(--accent-color);
 }
 
 /* ==========/client=========== */
