@@ -227,11 +227,20 @@ color:var(--accent-color);
     visibility: hidden;
     width: 0;
     height: 0;}
+    
+
 
     .desc-flex{      
     column-gap: 30px ;
     display: flex;
    flex-wrap: wrap;
+
+   justify-content: center;
+    }
+    .icon-antenna{
+        width: 70px;
+        height: 70px;
+    
     }
     .desc-list-item{
         max-width: 270px;
