@@ -178,6 +178,9 @@ color:var(--accent-color);
 /*=======/header======*/
 
 .hero{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color:var(--hero-background-color) ;
     background-image:linear-gradient(var(--hero-line-gradient),var(--hero-line-gradient)), 
     url(../images/hero/img.jpg) ;
@@ -246,7 +249,6 @@ color:var(--accent-color);
     .desc-icon{
         width: 70px;
         height: 70px;
-        
     }
     .svg{
         display: flex;
@@ -254,14 +256,15 @@ color:var(--accent-color);
         align-items: center;
         width: 270px;
         height: 120px;
-        background-color: var(--svg-background-color);}
+        background-color: var(--svg-background-color);
+    margin-bottom: 30px;}
     .desc-list-item{
         max-width: 270px;
         flex-basis: calc((100%-30px) / 4);
         
     }
     .desc-card-down{
-        padding-top: 30px;
+    
     }
 .desc-subtitle{
     margin-bottom: 10px;
@@ -465,7 +468,7 @@ color:var(--accent-color);
     .footer-social{
 
     }
-    .footer-title{
+    .footer-text {
         font-weight: 700;
         line-height: 16px;
         text-transform: uppercase;
